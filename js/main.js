@@ -27,7 +27,7 @@ $(document).ready(function() {
     $('.main-slider .owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 4000,
         margin: 10,
         rtl: true,
         navText: ["<i class='fas fa-chevron-right fa-lg'></i>", "<i class='fas fa-chevron-left fa-lg'></i>"],
@@ -63,7 +63,7 @@ $(document).ready(function() {
     $('.products .owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 4000,
         margin: 30,
         rtl: true,
         navText: ["<i class='fas fa-chevron-right fa-lg'></i>", "<i class='fas fa-chevron-left fa-lg'></i>"],
