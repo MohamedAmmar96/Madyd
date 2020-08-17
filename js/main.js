@@ -27,7 +27,7 @@ $(document).ready(function() {
     $('.main-slider .owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
-        autoplayTimeout: 2500,
+        autoplayTimeout: 5000,
         margin: 10,
         rtl: true,
         navText: ["<i class='fas fa-chevron-right fa-lg'></i>", "<i class='fas fa-chevron-left fa-lg'></i>"],
@@ -62,17 +62,19 @@ $(document).ready(function() {
 
     $('.products .owl-carousel').owlCarousel({
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
+        // autoplay: true,
+        // autoplayTimeout: 5000,
         margin: 30,
         rtl: true,
         navText: ["<i class='fas fa-chevron-right fa-lg'></i>", "<i class='fas fa-chevron-left fa-lg'></i>"],
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1,
+                items: 2,
                 dots: true,
                 nav: false,
+                center: true,
+                margin: 10,
                 loop: true
             },
             500: {
@@ -178,13 +180,13 @@ $(document).ready(function() {
     });
 
     //This is to Open Side Menu in Small Screens
-    $(".user-terms .hidden-menu").click(function() {
+    $(".menu-button,.hidden-menu a").click(function() {
         $("body").addClass("overflow")
         $(".side-menu").addClass("overflow");
         $(".back-overlay").fadeIn(600);
     });
 
-    $(".user-terms .hidden-menu").click(function() {
+    $(".menu-button,.hidden-menu a").click(function() {
         $(".side-menu").addClass("overflow");
         $(".side-menu").addClass("right-open");
         $(".back-overlay").fadeIn(600);

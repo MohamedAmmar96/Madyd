@@ -20,11 +20,10 @@
         margin-top: 15px;
     }
     .header .header-content .make-row .user-terms .likes,
-    .header .header-content .make-row .user-terms .configuration {
+    .header .header-content .make-row .user-terms .menu-button {
         display: none;
     }
-    .header .header-content .make-row .user-terms .hidden-search,
-    .header .header-content .make-row .user-terms .hidden-menu {
+    .header .header-content .make-row .user-terms .hidden-search {
         display: block;
     }
     .header .header-content .make-row .user-terms .configuration a p,
@@ -32,18 +31,48 @@
     .header .header-content .make-row .user-terms .shopping-cart a p {
         display: none;
     }
-    .header .header-content .make-row .user-terms .hidden-search a span {
+    .header .header-content .make-row .user-terms .configuration a .config-icon {
+        padding-top: 2px;
+    }
+    .header .header-content .make-row .user-terms .hidden-search a .search-icon {
         font-size: 25px;
     }
-    .header .header-content .make-row .user-terms .shopping-cart a span,
-    .header .header-content .make-row .user-terms .hidden-menu a span {
+    .header .header-content .make-row .user-terms .configuration a .config-icon,
+    .header .header-content .make-row .user-terms .shopping-cart a .cart-icon {
         font-size: 28px;
+    }
+    /**** Hidden Menu Button ****/
+    .header .hidden-menu {
+        display: block;
+        margin-top: 10px;
+        background-color: #0c4d7e;
+        padding: 10px 10px;
+    }
+    .header .hidden-menu a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .header .hidden-menu a .hidden-menu-icon {
+        margin-top: 0px;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .header .hidden-menu a .hidden-menu-title {
+        margin-bottom: 0;
+        font-size: 16px;
+        margin-top: 2px;
+        font-family: "bold";
     }
     .nav {
         display: none;
     }
     .main-slider {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+    }
+    .main-slider .owl-carousel .owl-dots {
+        bottom: 15px;
     }
     .gallary .gallary-img {
         margin-top: 20px;
@@ -159,6 +188,11 @@
     .footer .footer-top .three .info-list {
         margin-left: 15px;
     }
+    .footer .footer-top .one .info-list,
+    .footer .footer-top .two .info-list,
+    .footer .footer-top .three .info-list {
+        margin-bottom: 0;
+    }
     .footer .footer-top .one h3,
     .footer .footer-top .two h3,
     .footer .footer-top .three h3 {
@@ -197,11 +231,11 @@
     .search-small {
         position: absolute;
         width: 400px;
-        height: 100px;
-        top: 75px;
+        height: 70px;
+        top: 65px;
         right: 10%;
-        border-radius: 20px;
-        box-shadow: -5px 5px 10px #aaa, 5px -5px 10px #aaa;
+        border-radius: 35px;
+        box-shadow: 3px 3px 5px #00001c, -3px -3px 5px #00001c;
         background-color: #fff;
         display: none;
         z-index: 99999;
@@ -287,6 +321,7 @@
     .side-menu .small-nav {
         font-family: "bold";
         font-size: 16px;
+        line-height: 1.7;
     }
     .side-menu .small-nav li {
         margin-bottom: 10px;
@@ -304,6 +339,7 @@
         font-family: "bold";
         font-size: 16px;
         color: #fff;
+        line-height: 1.7;
         transition: all 0.4s ease-in-out;
     }
     .side-menu .account p::after,
@@ -349,6 +385,23 @@
         right: 30px;
         font-size: 22px;
         margin-top: 0;
+    }
+    .item .item-img-box .hidden-cart {
+        display: flex;
+        flex-direction: row;
+    }
+    .item .item-img-box .hidden-cart .hidden-cart-icon {
+        margin-right: 10px;
+        padding: 5px;
+    }
+    .item .item-content .item-name {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .item .item-content .price-box {
+        width: 80px;
+        height: 30px;
+        margin-right: 7px;
     }
     .big-gallary .big-gallary-content {
         font-size: 14px;
@@ -398,7 +451,7 @@
         display: none;
     }
     .header .header-content .make-row .user-terms .hidden-search,
-    .header .header-content .make-row .user-terms .hidden-menu {
+    .header .header-content .make-row .user-terms .menu-button {
         display: block;
     }
     .header .header-content .make-row .user-terms .configuration a p,
@@ -406,11 +459,11 @@
     .header .header-content .make-row .user-terms .shopping-cart a p {
         display: none;
     }
-    .header .header-content .make-row .user-terms .hidden-search a span {
+    .header .header-content .make-row .user-terms .hidden-search a .search-icon {
         font-size: 25px;
     }
-    .header .header-content .make-row .user-terms .shopping-cart a span,
-    .header .header-content .make-row .user-terms .hidden-menu a span {
+    .header .header-content .make-row .user-terms .shopping-cart a .cart-icon,
+    .header .header-content .make-row .user-terms .menu-button a .hidden-menu-icon {
         font-size: 28px;
     }
     .nav {
@@ -418,6 +471,9 @@
     }
     .main-slider {
         margin-bottom: 60px;
+    }
+    .main-slider .owl-carousel .owl-dots {
+        bottom: 15px;
     }
     .gallary .gallary-img {
         margin-top: 20px;
@@ -457,6 +513,11 @@
         font-size: 24px;
         padding-top: 5px;
         margin-left: 5px;
+    }
+    .features .features-box .fe-four .feature-icon img {
+        width: 25px;
+        height: 25px;
+        margin-top: 0;
     }
     .features .features-box .feature .feature-content h3 {
         font-size: 15px;
@@ -528,7 +589,7 @@
         margin-bottom: 0;
     }
     .footer .footer-bottom .payment {
-        width: 300px;
+        width: 400px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -543,6 +604,11 @@
     .footer .footer-top .two .info-list,
     .footer .footer-top .three .info-list {
         margin-left: 15px;
+    }
+    .footer .footer-top .one .info-list,
+    .footer .footer-top .two .info-list,
+    .footer .footer-top .three .info-list {
+        margin-bottom: 0;
     }
     .footer .footer-top .one h3,
     .footer .footer-top .two h3,
@@ -582,11 +648,11 @@
     .search-small {
         position: absolute;
         width: 450px;
-        height: 100px;
-        top: 75px;
+        height: 70px;
+        top: 65px;
         right: 10%;
-        border-radius: 20px;
-        box-shadow: -5px 5px 10px #aaa, 5px -5px 10px #aaa;
+        border-radius: 35px;
+        box-shadow: 3px 3px 5px #00001c, -3px -3px 5px #00001c;
         background-color: #fff;
         display: none;
         z-index: 99999;
@@ -644,7 +710,7 @@
     /**** Small Side Menu ****/
     .side-menu {
         position: fixed;
-        width: 350px;
+        width: 320px;
         height: 100%;
         top: 0;
         left: -580px;
@@ -672,6 +738,7 @@
     .side-menu .small-nav {
         font-family: "bold";
         font-size: 18px;
+        line-height: 1.7;
     }
     .side-menu .small-nav li {
         margin-bottom: 10px;
@@ -691,6 +758,7 @@
         font-size: 18px;
         color: #fff;
         margin-left: 10px;
+        line-height: 1.7;
         transition: all 0.4s ease-in-out;
     }
     .side-menu .account p::after,
