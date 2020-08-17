@@ -700,7 +700,7 @@ body {
 }
 
 .features .features-box .feature:hover {
-    transform: scale(1.03);
+    transform: translateY(-10px);
 }
 
 .features .features-box .feature:first-child {
