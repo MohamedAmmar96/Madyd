@@ -105,32 +105,33 @@ $(document).ready(function() {
     });
 
 
+    //this is to make the features part as owl-carousel slider  
+    if ($(window).width() <= 991) {
+        $(".features-box").addClass("owl-carousel owl-theme");
+        $(".features-box .feature").removeClass("owl-carousel");
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+            rtl: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false,
+                    loop: false
+                },
+                500: {
+                    items: 2,
+                    nav: false,
+                    loop: false
+                }
+            }
+        })
+    } else {
+        $(".features-box").removeClass("owl-carousel");
+        $(".features-box .feature").removeClass("owl-carousel");
+    };
 
-    // if ($(window).width() <= 991) {
-    //     $(".features .features-box").addClass("owl-carousel owl-theme");
-    //     $(".features-box .feature").removeClass("owl-carousel");
-    //     $('.features-box .owl-carousel').owlCarousel({
-    //         loop: true,
-    //         margin: 10,
-    //         rtl: true,
-    //         responsiveClass: true,
-    //         responsive: {
-    //             0: {
-    //                 items: 1,
-    //                 nav: false,
-    //                 loop: true
-    //             },
-    //             500: {
-    //                 items: 2,
-    //                 nav: false,
-    //                 loop: true
-    //             }
-    //         }
-    //     });
-    // } else {
-    //     $(".features .features-box").removeClass("owl-carousel");
-    //     $(".features-box .feature").removeClass("owl-carousel");
-    // };
 
     // This is to Open Language menu in large Screens
     $(".page-language .lang .lang-name").click(function() {
@@ -147,6 +148,24 @@ $(document).ready(function() {
 
     $(".trans-back").click(function() {
         $(".lang .lang-list").slideUp(600);
+    });
+
+
+    // This is to Open Configuration menu in 
+    $(".user-terms .configuration a").click(function() {
+        $(".all-overlay").fadeIn(600);
+    });
+
+    $(".user-terms .configuration a").click(function() {
+        $(".user-terms .config-list").slideDown(600);
+    });
+
+    $(".all-overlay").click(function() {
+        $(".all-overlay").fadeOut(600);
+    });
+
+    $(".all-overlay").click(function() {
+        $(".user-terms .config-list").slideUp(600);
     });
 
 
@@ -168,6 +187,8 @@ $(document).ready(function() {
     });
 
     $(".user-terms .hidden-search").click(function() {
+        $(".hidden-search a span").removeClass("open-search")
+        $(".hidden-search a span").addClass("close-search")
         $(".search-small").slideDown(600);
     });
 
@@ -176,8 +197,11 @@ $(document).ready(function() {
     });
 
     $(".back-overlay").click(function() {
+        $(".hidden-search a span").addClass("open-search")
+        $(".hidden-search a span").removeClass("close-search")
         $(".search-small").slideUp(600);
     });
+
 
     //This is to Open Side Menu in Small Screens
     $(".menu-button,.hidden-menu a").click(function() {
