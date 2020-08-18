@@ -169,15 +169,15 @@ $(document).ready(function() {
 
     //This is to Open Footer Lists in small screens 
 
-    $(".one h3").click(function() {
-        $(".one .info-list").slideToggle(600);
-    });
-    $(".two h3").click(function() {
-        $(".two .info-list").slideToggle(600);
-    });
-    $(".three h3").click(function() {
-        $(".three .info-list").slideToggle(600);
-    });
+    // $(".one h3").click(function() {
+    //     $(".one .info-list").slideToggle(600);
+    // });
+    // $(".two h3").click(function() {
+    //     $(".two .info-list").slideToggle(600);
+    // });
+    // $(".three h3").click(function() {
+    //     $(".three .info-list").slideToggle(600);
+    // });
 
     //This is to Open Search Box in small screens
     $(".user-terms .hidden-search").click(function() {
@@ -234,4 +234,13 @@ $(document).ready(function() {
     $(".language p").click(function() {
         $(".language ul").slideToggle(600);
     });
-});
+
+
+    if ($(window).width() <= 991) {
+        $('.collapse[data-parent="#parent"]').on('show.bs.collapse', function() {
+            $(".collapse[data-parent='#parent']").not(this).collapse('hide');
+        });
+    } else {
+        $(".coll-list").addClass("in")
+    }
+})

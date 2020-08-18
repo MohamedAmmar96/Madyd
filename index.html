@@ -496,63 +496,79 @@
                             <img src="images/logo/logo.png" class="wow animate__fadeInUpBig" data-wow-duration="0.5s">
                         </div>
                     </div>
+                    <!-- Start Of Collapse -->
 
-                    <div class="col-md-2 col-xs-12">
-                        <div class="data-col one wow animate__fadeInUpBig" data-wow-duration="0.6s">
-                            <h3>معلومات</h3>
-                            <ul class="info-list list-unstyled">
-                                <li>
-                                    <a href="#">من نحن</a>
-                                </li>
-                                <li>
-                                    <a href="#">الحسابات البنكية</a>
-                                </li>
-                                <li>
-                                    <a href="#">الخصوصية</a>
-                                </li>
-                                <li>
-                                    <a href="#">شروط الاستخدام</a>
-                                </li>
-                            </ul>
+                    <div class="slide-groub" id="parent">
+                        <div class="col-md-2 col-xs-12">
+                            <div class="data-col one wow animate__fadeInUpBig" data-wow-duration="0.6s">
+                                <h3>
+                                    <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">معلومات</a>
+                                </h3>
+                                <div class="coll-list collapse" id="collapseOne" data-parent="#parent">
+                                    <ul class="info-list list-unstyled">
+                                        <li>
+                                            <a href="#">من نحن</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">الحسابات البنكية</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">الخصوصية</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">شروط الاستخدام</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-xs-12">
+                            <div class="data-col two wow animate__fadeInUpBig" data-wow-duration="0.7s">
+                                <h3>
+                                    <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">خدمة العملاء</a>
+                                </h3>
+                                <div class="coll-list collapse" id="collapseTwo" data-parent="#parent">
+                                    <ul class="info-list list-unstyled">
+                                        <li>
+                                            <a href="#">اتصل بنا</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">إرجاع الطلب</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">خريطة الموقع</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-xs-12">
+                            <div class="data-col three wow animate__fadeInUpBig" data-wow-duration="0.8s">
+                                <h3>
+                                    <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">حسابي</a>
+                                </h3>
+                                <div class="coll-list collapse" id="collapseThree" data-parent="#parent">
+                                    <ul class="info-list list-unstyled">
+                                        <li>
+                                            <a href="#">حسابي</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">طلباتي</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">قائمة رغباتي</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">القائمة البريدية</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-md-2 col-xs-12">
-                        <div class="data-col two wow animate__fadeInUpBig" data-wow-duration="0.7s">
-                            <h3>خدمة العملاء</h3>
-                            <ul class="info-list list-unstyled">
-                                <li>
-                                    <a href="#">اتصل بنا</a>
-                                </li>
-                                <li>
-                                    <a href="#">إرجاع الطلب</a>
-                                </li>
-                                <li>
-                                    <a href="#">خريطة الموقع</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 col-xs-12">
-                        <div class="data-col three wow animate__fadeInUpBig" data-wow-duration="0.8s">
-                            <h3>حسابي</h3>
-                            <ul class="info-list list-unstyled">
-                                <li>
-                                    <a href="#">حسابي</a>
-                                </li>
-                                <li>
-                                    <a href="#">طلباتي</a>
-                                </li>
-                                <li>
-                                    <a href="#">قائمة رغباتي</a>
-                                </li>
-                                <li>
-                                    <a href="#">القائمة البريدية</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- End Of Collapse -->
 
                     <div class="col-md-3 col-xs-12">
                         <div class="data-col four">
@@ -593,6 +609,8 @@
 
         </div>
     </footer>
+
+
     <!------------------------------------ End Footer Section -------------------------------->
 
 

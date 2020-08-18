@@ -237,9 +237,16 @@
     .footer .footer-top .three .info-list {
         margin-bottom: 0;
     }
-    .footer .footer-top .one h3,
-    .footer .footer-top .two h3,
-    .footer .footer-top .three h3 {
+    .footer .footer-top .one .info-list li,
+    .footer .footer-top .two .info-list li,
+    .footer .footer-top .three .info-list li {
+        margin-right: 10px;
+    }
+    .footer .footer-top .one h3 a,
+    .footer .footer-top .two h3 a,
+    .footer .footer-top .three h3 a {
+        color: #000;
+        text-decoration: none;
         transition: all 0.4s ease-in-out;
     }
     .footer .footer-top .one h3::after,
@@ -253,13 +260,10 @@
         position: absolute;
         left: 30px;
     }
-    .footer .footer-top .one h3:hover,
-    .footer .footer-top .two h3:hover,
-    .footer .footer-top .three h3:hover {
+    .footer .footer-top .one h3 a:hover,
+    .footer .footer-top .two h3 a:hover,
+    .footer .footer-top .three h3 a:hover {
         color: #0c4d7e;
-    }
-    .footer .footer-top .info-list {
-        display: none;
     }
     /**** Small Search box ****/
     .back-overlay {
@@ -358,13 +362,12 @@
         right: 0;
     }
     .side-menu .small-nav {
-        font-family: "bold";
+        font-family: "medium";
         font-size: 16px;
-        margin-bottom: 0;
         line-height: 1.7;
     }
     .side-menu .small-nav li {
-        /* margin-bottom: 10px; */
+        margin-bottom: 10px;
         transition: all 0.4s ease-in-out;
     }
     .side-menu .small-nav li a {
@@ -376,12 +379,10 @@
     }
     .side-menu .account p,
     .side-menu .language p {
-        font-family: "bold";
+        font-family: "medium";
         font-size: 16px;
         color: #fff;
         line-height: 1.7;
-        margin-top: 0;
-        margin-bottom: 0;
         transition: all 0.4s ease-in-out;
     }
     .side-menu .account p::after,
@@ -660,9 +661,11 @@
     .footer .footer-top .three .info-list {
         margin-bottom: 0;
     }
-    .footer .footer-top .one h3,
-    .footer .footer-top .two h3,
-    .footer .footer-top .three h3 {
+    .footer .footer-top .one h3 a,
+    .footer .footer-top .two h3 a,
+    .footer .footer-top .three h3 a {
+        color: #000;
+        text-decoration: none;
         transition: all 0.4s ease-in-out;
     }
     .footer .footer-top .one h3::after,
@@ -676,13 +679,10 @@
         position: absolute;
         left: 30px;
     }
-    .footer .footer-top .one h3:hover,
-    .footer .footer-top .two h3:hover,
-    .footer .footer-top .three h3:hover {
+    .footer .footer-top .one h3 a:hover,
+    .footer .footer-top .two h3 a:hover,
+    .footer .footer-top .three h3 a:hover {
         color: #0c4d7e;
-    }
-    .footer .footer-top .info-list {
-        display: none;
     }
     /**** Small Search box ****/
     .back-overlay {
@@ -869,6 +869,9 @@
     .side-menu {
         display: none;
     }
+    .features .features-box .feature:hover {
+        transform: translateY(-10px);
+    }
 }
 
 
@@ -885,5 +888,8 @@
     }
     .side-menu {
         display: none;
+    }
+    .features .features-box .feature:hover {
+        transform: translateY(-10px);
     }
 }
