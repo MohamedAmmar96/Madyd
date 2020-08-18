@@ -280,7 +280,7 @@ body {
     top: 100%;
     left: 150px;
     display: none;
-    z-index: 9999;
+    z-index: 99999;
     box-shadow: 5px 5px 10px #ddd, -5px 0px 10px #ddd;
 }
 
