@@ -403,6 +403,7 @@
         font-family: "medium";
         font-size: 14px;
         display: none;
+        margin-bottom: 0;
     }
     .side-menu .account ul li,
     .side-menu .language ul li {
@@ -850,6 +851,7 @@
         font-family: "medium";
         font-size: 16px;
         display: none;
+        margin-bottom: 0;
     }
     .side-menu .account ul li,
     .side-menu .language ul li {
