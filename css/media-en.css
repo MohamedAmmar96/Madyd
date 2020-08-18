@@ -433,23 +433,6 @@
         font-size: 22px;
         margin-top: 0;
     }
-    .item .item-img-box .hidden-cart {
-        display: flex;
-        flex-direction: row;
-    }
-    .item .item-img-box .hidden-cart .hidden-cart-icon {
-        margin-right: 10px;
-        padding: 5px;
-    }
-    .item .item-content .item-name {
-        font-size: 14px;
-        margin-left: 10px;
-    }
-    .item .item-content .price-box {
-        width: 80px;
-        height: 30px;
-        margin-right: 7px;
-    }
     .big-gallary .big-gallary-content {
         font-size: 14px;
         right: 10px;
@@ -465,9 +448,6 @@
     /**** Small Search box ****/
     .search-small {
         width: 300px;
-        /* left: 50%;
-        border-radius: 20px;
-        transform: translateX(-50%); */
     }
 }
 

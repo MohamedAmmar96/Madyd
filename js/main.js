@@ -70,20 +70,19 @@ $(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 2,
+                items: 1,
                 dots: true,
                 nav: false,
-                center: true,
                 margin: 10,
                 loop: true
             },
-            500: {
+            480: {
                 items: 2,
                 dots: true,
                 nav: false,
                 loop: true
             },
-            768: {
+            720: {
                 items: 3,
                 dots: true,
                 nav: true,
