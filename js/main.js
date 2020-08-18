@@ -73,7 +73,6 @@ $(document).ready(function() {
                 items: 1,
                 dots: true,
                 nav: false,
-                margin: 10,
                 loop: true
             },
             480: {
