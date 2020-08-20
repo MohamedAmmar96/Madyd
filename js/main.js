@@ -187,7 +187,7 @@ $(document).ready(function() {
     $(".user-terms .hidden-search").click(function() {
         $(".hidden-search a span").removeClass("open-search")
         $(".hidden-search a span").addClass("close-search")
-        $(".search-small").slideDown(600);
+        $(".search-box").slideDown(600);
     });
 
     $(".back-overlay").click(function() {
@@ -197,7 +197,7 @@ $(document).ready(function() {
     $(".back-overlay").click(function() {
         $(".hidden-search a span").addClass("open-search")
         $(".hidden-search a span").removeClass("close-search")
-        $(".search-small").slideUp(600);
+        $(".search-box").slideUp(600);
     });
 
 
