@@ -234,6 +234,11 @@
     .footer .footer-top .three .info-list {
         margin-bottom: 0;
     }
+    .footer .footer-top .one .info-list li,
+    .footer .footer-top .two .info-list li,
+    .footer .footer-top .three .info-list li {
+        margin-left: 10px;
+    }
     .footer .footer-top .one h3 a,
     .footer .footer-top .two h3 a,
     .footer .footer-top .three h3 a {
@@ -625,6 +630,11 @@
     .footer .footer-top .two .info-list,
     .footer .footer-top .three .info-list {
         margin-bottom: 0;
+    }
+    .footer .footer-top .one .info-list li,
+    .footer .footer-top .two .info-list li,
+    .footer .footer-top .three .info-list li {
+        margin-left: 10px;
     }
     .footer .footer-top .one h3 a,
     .footer .footer-top .two h3 a,
